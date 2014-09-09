@@ -4,50 +4,87 @@
   <title>L'Histoire, autrement</title>
   <meta charset="utf-8">
   <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body>
+<body class="filter">
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=236354936560058&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrapper">
   <header>
     <h1>Je vous ai compris !</h1>
-    <img src="http://www.christies.com/lotfinderimages/d53719/marcel_duchamp_lhooq_d5371967h.jpg">
+    <img src="images/lhooq.jpg" class="rounded">
     <h2>L'Histoire, autrement</h2>
     <nav>
       <ul>
-        <li>Reines, Rois et dirigeants</li>
-        <li>Batailles</li>
-        <li>L'inconnu du coin</li>
-        <li>Le quiz du héros</li>
+        <li><a href="#">Reines, Rois et dirigeants</a></li> 
+        <li><a href="#">Batailles</a></li>
+        <li><a href="#">L'inconnu du coin</a></li>
+        <li> <a href="#">Le quiz du héros</a></li>
       </ul>
     </nav>
   </header>
 
-  <section>
-    <article>
-      <img src="">
-      <h3>Titre</h3>
-      <p>paragraph</p>
+  <div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
+
+  <section class="left tinted-image">
+    <article class="left">
+      <img src="images/bataille-stalingrad.jpg" class="rounded centered">
+      <h3>La bataille de Stalingrad</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article>
-      <img src="">
-      <h3>Titre</h3>
-      <p>paragraph</p>
+    <article class="right">
+      <img src="images/reine-margot.jpg" class="rounded centered">
+      <h3>La Reine Margot</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article>
-      <img src="">
-      <h3>Titre</h3>
-      <p>paragraph</p>
+    <article class="left">
+      <img src="images/boulanger.jpg" class="rounded centered">
+      <h3>Mon boulanger, ce héros</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article>
-      <img src="">
-      <h3>Titre</h3>
-      <p>paragraph</p>
+    <article class="right">
+      <img src="images/histoire-de-billes.jpg" class="rounded centered">
+      <h3>Quiz sur l'Histoire des billes</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
   </section>
 
-  <aside>
-    <i class="fa fa-star"></i>
+  <aside class="right">
+    <i class="fa fa-star yellow star"></i>
     <form>
       <input type="text">
       <button type="submit" class="fa fa-search"></button>
@@ -64,6 +101,6 @@
   <footer>
     <p><button><a href="#">je veux m'inscrire à la Newsletter</a></button></p>
   </footer>
-
+</div>
 </body>
 </html>
