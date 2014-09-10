@@ -1,25 +1,65 @@
+
+/************************************************/
+/***********     CSS CONTENT      **********/
+/***********************************************/
+
+/*
+
+- Initialize
+- Global
+- Header
+- Home content
+- Aside
+- Footer
+
+*/
+
+
+
+/************************************************/
+/*************     INITIALIZE      **************/
+/***********************************************/
 a {
   text-decoration: none;
   color: inherit;
 }
 
-header {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/************************************************/
+/*************     GLOBAL      ****************/
+/***********************************************/
+
+/* Background image with filter */
+body {
+  background: 
+    radial-gradient(
+            rgba(255,1,3, 0.5),
+            rgba(107,1,3, 1)
+    ),
+    url(images/paris-liberation.png);
+}
+
+h1, h2, h3, h4, h5, h6 {
   text-align: center;
+  color: rgba(163,0,6, 0.7);
 }
 
-header img {
-  border-radius: 50%;
-  height: 100px;
+h1, h2 {
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
 }
 
-nav ul li {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 40px;
+h3, h4, h5, h6, nav ul li a {
+  font-family: 'Ubuntu Mono', sans-serif;
 }
 
-#logo {
-  height: 150px;
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
 }
 
 .yellow {
@@ -28,32 +68,8 @@ nav ul li {
 }
 
 .star {
-  text-align: center;
   display: block;
-  margin-bottom: 20px;
-}
-
-article img {
-  height: 100px;
-}
-
-article {
-  width: 40%;
-  padding: 20px 5%;
-}
-
-aside {
-  width: 20%;
-}
-
-section {
-  width: 78%;
-  padding: 0 1%;
-  border-right: ;
-}
-
-footer {
-  clear: both;
+  margin: auto;
 }
 
 .left {
@@ -62,28 +78,6 @@ footer {
 
 .right {
   float: right;
-}
-
-/* Background image with filter */
-.filter {
-  background: 
-    radial-gradient(
-            rgba(107,1,3, 0.5),
-            rgba(107,1,3, 1)
-    ),
-    url(images/paris-liberation.png);
-}
-
-.wrapper {
-  width: 960px;
-  margin: auto;
-  background-color: white;
-  padding: 20px 50px;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 .rounded {
@@ -95,43 +89,99 @@ body {
   margin: auto;
 }
 
-h1, h2 {
-  font-family: 'Lobster', cursive;
-  color: rgba(163,0,6, 0.7);
+/* QUOTES */
+.quote {
+  display: block;
+  font-size: 2em;
+}
+
+.quote::before {
+  content: "\f10d";
+  font-family: FontAwesome;
+  margin-right: 1em;
+}
+
+.quote::after {
+  content: "\f10e";
+  font-family: FontAwesome;
+  margin-left: 1em;
+}
+/* END QUOTES */
+
+#wrapper {
+  width: 960px;
+  margin: auto;
+  background-color: white;
+  padding: 20px 50px;
+}
+
+
+
+
+
+
+/************************************************/
+/*************     HEADER      ****************/
+/***********************************************/
+
+header {
   text-align: center;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+header h1 {
+  margin-top: 0;
 }
 
-h3, h4, h5, h6 {
-  font-family: 'Ubuntu Mono', sans-serif;
-  color: rgba(163,0,6, 0.7);
-  text-align: center;
+header h2 {
+  margin-bottom: 40px;
 }
 
-h1 {
-  font-weight: 200;
-}
-
-nav ul li a {
-  font-family: 'Ubuntu Mono', sans-serif;
-}
-
-nav {
+/* MAIN NAV */
+#main-nav {
   border-top: 1px solid rgb(107,1,3);
   border-bottom: 1px solid rgb(107,1,3);
   margin: 20px 0;
 }
 
-header h1 {
-  margin-top: 0;
-  color: rgba(163,0,6, 1);
+#main-nav ul li {
+  display: inline-block;
+  padding: 10px 40px;
+}
+/* END MAIN NAV */
+
+#logo {
+  height: 150px;
 }
 
-header h2 {
-  margin-bottom: 40px;
-  color: rgba(163,0,6, 0.7);
+
+/************************************************/
+/**********     HOME CONTENT      *********/
+/***********************************************/
+#home {
+  width: 78%;
+  padding: 0 1%;
+}
+
+#home .home-picture {
+  height: 100px;
+}
+
+#home .home-article {
+  width: 40%;
+  padding: 20px 5%;
+}
+
+/************************************************/
+/*************        ASIDE       ****************/
+/***********************************************/
+aside {
+  width: 20%;
+}
+
+/************************************************/
+/*************     FOOTER      ****************/
+/***********************************************/
+
+footer {
+  clear: both;
 }

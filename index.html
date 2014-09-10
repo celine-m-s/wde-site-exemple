@@ -2,30 +2,22 @@
 <html>
 <head>
   <title>L'Histoire, autrement</title>
-  <meta charset="utf-8">
-  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8"> <!-- Accents -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> <!-- Amazing icons -->
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,200,600' rel='stylesheet' type='text/css'> <!-- Raleway font -->
   <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="style.css"> <!-- My custom stylesheet -->
 </head>
+
 <body class="filter">
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&appId=236354936560058&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="wrapper">
+<div id="wrapper">
   <header>
-    <h1>Je vous ai compris !</h1>
+    <h1 id="chien">Je vous ai compris !</h1>
     <img src="images/lhooq.jpg" class="rounded" id="logo">
     <h2>L'Histoire, autrement</h2>
-    <nav>
+    <nav id="main-nav">
       <ul>
         <li><a href="#">Reines, Rois et dirigeants</a></li> 
         <li><a href="#">Batailles</a></li>
@@ -35,11 +27,9 @@
     </nav>
   </header>
 
-  <div class="fb-activity" data-site="developers.facebook.com" data-action="likes, recommends" data-colorscheme="light" data-header="true"></div>
-
-  <section class="left tinted-image">
-    <article class="left">
-      <a href="#"><img src="images/bataille-stalingrad.jpg" class="rounded centered"></a>
+  <section class="left tinted-image" id="home">
+    <article class="left home-article">
+      <a href="#"><img src="images/bataille-stalingrad.jpg" class="rounded centered home-picture"></a>
       <h3><a href="#">La bataille de Stalingrad</a></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -49,8 +39,8 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article class="right">
-      <a href="#"></a><img src="images/reine-margot.jpg" class="rounded centered">
+    <article class="right home-article">
+      <a href="#"></a><img src="images/reine-margot.jpg" class="rounded centered home-picture">
       <h3><a href="#">La Reine Margot</a></h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -60,10 +50,10 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article class="left">
-      <img src="images/boulanger.jpg" class="rounded centered">
+    <article class="left home-article">
+      <img src="images/boulanger.jpg" class="rounded centered home-picture">
       <h3>Mon boulanger, ce héros</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      <p>Lorem ipsum dolor sit amet, <span class="quote">consectetur adipisicing elit, sed do eiusmod</span>
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
       quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
       consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -71,8 +61,8 @@
       proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </article>
 
-    <article class="right">
-      <img src="images/histoire-de-billes.jpg" class="rounded centered">
+    <article class="right home-article">
+      <img src="images/histoire-de-billes.jpg" class="rounded centered home-picture">
       <h3>Quiz sur l'Histoire des billes</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -86,7 +76,7 @@
   <aside class="right">
     <i class="fa fa-star yellow star"></i>
     <form>
-      <input type="text">
+      <input type="text" placeholder="Recherchez un truc">
       <button type="submit" class="fa fa-search"></button>
     </form>
 <!--     We could have used the Google Custom Search Engine but we need to be online: https://www.google.com/cse/create/new -->
@@ -101,6 +91,6 @@
   <footer>
     <p><button><a href="#">je veux m'inscrire à la Newsletter</a></button></p>
   </footer>
-</div>
+</div> <!-- Container -->
 </body>
 </html>
