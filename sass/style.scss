@@ -1,6 +1,16 @@
+@import 'setup';
+
+
+
+
+
+
+
+
 /************************************************/
 /***********     CSS CONTENT      **********/
 /***********************************************/
+
 /*
 
 - Initialize
@@ -11,189 +21,203 @@
 - Footer
 
 */
+
+
+
 /************************************************/
 /*************     INITIALIZE      **************/
 /***********************************************/
-/* line 30, sass/style.scss */
 a {
   text-decoration: none;
-  color: #4ecdc4;
+  color: $light-blue;
 }
 
 /************************************************/
 /*************     GLOBAL      ****************/
 /***********************************************/
-/* line 39, sass/style.scss */
-html {
+
+html  {
   font-size: 67%;
 }
 
 /* Background image with filter */
-/* line 44, sass/style.scss */
 body {
-  background: radial-gradient(rgba(1, 1, 3, 0), #6b0103), url(images/paris-liberation.png);
+  background: 
+    radial-gradient(
+            rgba(1,1,3, 0.5),
+            rgba(107,1,3, 1)
+    ),
+    url(images/paris-liberation.png);
 }
 
-/* line 54, sass/style.scss */
+
 h1, h2, h3, h4, h5, h6, p {
   line-height: 1.5;
 }
 
-/* line 58, sass/style.scss */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  color: #ff6b6b;
+  color: $pink;
 }
 
-/* line 63, sass/style.scss */
 h1, h2 {
   font-family: 'Lobster', cursive;
   font-weight: 200;
 }
 
-/* line 68, sass/style.scss */
 h3, h4, h5, h6, nav ul li a {
   font-family: 'Ubuntu Mono', sans-serif;
 }
 
-/* line 73, sass/style.scss */
+
 h1 {
   font-size: 6rem;
 }
 
 @media (max-width: 960px) {
-  /* line 78, sass/style.scss */
   h1 {
     font-size: 3rem;
   }
 }
-/* line 83, sass/style.scss */
+
 p, input, a {
-  font-family: 'Raleway', sans-serif;
-  /*font-size: 1rem;*/
+    font-family: 'Raleway', sans-serif;
+    /*font-size: 1rem;*/
 }
 
-/* line 88, sass/style.scss */
 nav a {
   font-size: 1.5rem;
 }
 
-/* line 92, sass/style.scss */
 .yellow {
-  color: #4ecdc4;
+  color: $light-blue;
   font-size: 40px;
 }
 
 /*STAR SEPARATOR */
-/* line 98, sass/style.scss */
 .star {
   display: block;
   text-align: center;
   margin: 20px 0;
 }
 
-/* line 104, sass/style.scss */
 .star {
   line-height: 0.5;
 }
-
-/* line 107, sass/style.scss */
 .star span {
   display: inline-block;
-  position: relative;
+  position: relative;  
 }
-
-/* line 111, sass/style.scss */
 .star span::before, .star span::after {
   content: "";
   position: absolute;
   width: 60px;
   height: 5px;
-  border-top: 1px solid #f8ca00;
-  border-bottom: 1px solid #f8ca00;
-  top: 40%;
+  border-top: 1px solid rgb(248,202,0);
+  border-bottom: 1px solid rgb(248,202,0);
+  top:40%;
 }
-
-/* line 120, sass/style.scss */
 .star span::before {
   right: 100%;
   margin-right: 15px;
 }
 
-/* line 125, sass/style.scss */
 .star span::after {
   left: 100%;
   margin-left: 15px;
 }
-
 /* END STAR SEPARATOR */
-/* line 139, sass/style.scss */
+
+// .left {
+//   float: left;
+// }
+
+// .right {
+//   float: right;
+// }
+
 .rounded {
   border-radius: 50%;
 }
 
-/* line 143, sass/style.scss */
 .centered {
   display: block;
   margin: auto;
 }
 
 /* QUOTES */
-/* line 149, sass/style.scss */
 .quote {
   display: block;
   font-size: 2em;
 }
 
-/* line 154, sass/style.scss */
 .quote::before {
   content: "\f10d";
   font-family: FontAwesome;
   margin-right: 1em;
 }
 
-/* line 160, sass/style.scss */
 .quote::after {
   content: "\f10e";
   font-family: FontAwesome;
   margin-left: 1em;
 }
-
 /* END QUOTES */
-/* line 167, sass/style.scss */
-#wrapper {
-  /*width: 960px;*/
-  background-color: white;
+
+  #wrapper {
+    /*width: 960px;*/
+    // margin: auto;
+    background-color: white;
+    // padding: 20px 50px;
+  }
+
+@media (min-width: 970px) {
+  #wrapper {
+    // width: 960px;
+  }
+  
 }
+
+@media (min-width: 600px) and (max-width: 969px) {
+  #wrapper {
+    // width: 600px;
+  }
+}
+
+@media (max-width: 599px) {
+  #wrapper {
+    // width: 100%;
+    // padding: 0;
+  }
+}
+
+
+
 
 /************************************************/
 /*************     HEADER      ****************/
 /***********************************************/
-/* line 201, sass/style.scss */
+
 header {
   text-align: center;
 }
 
-/* line 205, sass/style.scss */
 header h1 {
   margin-top: 0;
 }
 
-/* line 209, sass/style.scss */
 header h2 {
   margin-bottom: 40px;
 }
 
 /* MAIN NAV */
-/* line 214, sass/style.scss */
 #main-nav {
-  border-top: 1px solid #6b0103;
-  border-bottom: 1px solid #6b0103;
+  border-top: 1px solid rgb(107,1,3);
+  border-bottom: 1px solid rgb(107,1,3);
   margin: 2rem 0;
   padding: 1rem 0;
 }
 
-/* line 221, sass/style.scss */
 #main-nav ul li {
   display: inline-block;
   padding: 10px 40px;
@@ -201,26 +225,40 @@ header h2 {
   text-align: center;
 }
 
-/* line 228, sass/style.scss */
 #main-nav ul a:hover::before {
   content: "\f005";
   font-family: FontAwesome;
   position: absolute;
   top: 83%;
   left: 46%;
-  color: #f8ca00;
+  color: rgb(248,202,0);
+
 }
 
 /* END MAIN NAV */
-/* line 240, sass/style.scss */
+
 #logo {
   height: 150px;
 }
 
+
 /************************************************/
 /**********     HOME CONTENT      *********/
 /***********************************************/
-/* line 262, sass/style.scss */
+// #home {
+//   width: 78%;
+//   padding: 0 1%;
+// }
+
+// #home .home-picture {
+//   height: 100px;
+// }
+
+// #home .home-article {
+//   width: 40%;
+//   padding: 20px 5%;
+// }
+
 #home img {
   width: 200px;
 }
@@ -228,43 +266,46 @@ header h2 {
 /************************************************/
 /*************        ASIDE       ****************/
 /***********************************************/
+// aside {
+//   width: 20%;
+// }
+
 @media (max-width: 599px) {
-  /* line 274, sass/style.scss */
   aside {
-    /*    width: 100%;
-        padding: 20px;*/
+/*    width: 100%;
+    padding: 20px;*/
   }
 }
+
 /************************************************/
 /*************     FOOTER      ****************/
 /***********************************************/
-/* line 284, sass/style.scss */
+
 footer {
   position: fixed;
   width: 100%;
   bottom: 0;
-  background-color: #556270;
+  background-color: $blue;
   opacity: 0.8;
   text-align: center;
-}
-/* line 292, sass/style.scss */
-footer p {
-  padding: 0;
-  margin: 0;
-}
-/* line 297, sass/style.scss */
-footer button {
-  background-color: transparent;
-  color: transparent;
-  font-size: 2rem;
-  border: 1px solid transparent;
-  margin: 0.5rem;
-}
-/* line 304, sass/style.scss */
-footer button a {
-  color: white;
-}
-/* line 306, sass/style.scss */
-footer button a:hover {
-  color: #ff6b6b;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+
+  button {
+    background-color: transparent;
+    color: transparent;
+    font-size: 2rem;
+    border: 1px solid transparent;
+    margin: 0.5rem;
+
+    a {
+      color: white;
+      &:hover {
+        color: $pink;
+      }
+    }
+  }
 }
