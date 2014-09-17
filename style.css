@@ -1,3 +1,20 @@
+/*
+Theme Name: Mon thème
+Author: Céline MS
+Author URI: http://www.c-m-s.co
+Description: This is my, being humble, awesome theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, genius, talented
+*/
+
+
+
+
+
+
+
 /************************************************/
 /***********     CSS CONTENT      **********/
 /***********************************************/
@@ -31,7 +48,7 @@ html {
 /* Background image with filter */
 /* line 44, sass/style.scss */
 body {
-  background: radial-gradient(rgba(1, 1, 3, 0), #6b0103), url(images/paris-liberation.png);
+  background: radial-gradient(rgba(1, 1, 3, 0.5), #6b0103), url(images/paris-liberation.png);
 }
 
 /* line 54, sass/style.scss */
@@ -211,8 +228,14 @@ header h2 {
   color: #f8ca00;
 }
 
+/* line 238, sass/style.scss */
+.navbar-default {
+  background-color: transparent;
+  border: none;
+}
+
 /* END MAIN NAV */
-/* line 240, sass/style.scss */
+/* line 245, sass/style.scss */
 #logo {
   height: 150px;
 }
@@ -220,7 +243,7 @@ header h2 {
 /************************************************/
 /**********     HOME CONTENT      *********/
 /***********************************************/
-/* line 262, sass/style.scss */
+/* line 267, sass/style.scss */
 #home img {
   width: 200px;
 }
@@ -229,7 +252,7 @@ header h2 {
 /*************        ASIDE       ****************/
 /***********************************************/
 @media (max-width: 599px) {
-  /* line 274, sass/style.scss */
+  /* line 279, sass/style.scss */
   aside {
     /*    width: 100%;
         padding: 20px;*/
@@ -238,7 +261,7 @@ header h2 {
 /************************************************/
 /*************     FOOTER      ****************/
 /***********************************************/
-/* line 284, sass/style.scss */
+/* line 289, sass/style.scss */
 footer {
   position: fixed;
   width: 100%;
@@ -247,12 +270,12 @@ footer {
   opacity: 0.8;
   text-align: center;
 }
-/* line 292, sass/style.scss */
+/* line 297, sass/style.scss */
 footer p {
   padding: 0;
   margin: 0;
 }
-/* line 297, sass/style.scss */
+/* line 302, sass/style.scss */
 footer button {
   background-color: transparent;
   color: transparent;
@@ -260,11 +283,11 @@ footer button {
   border: 1px solid transparent;
   margin: 0.5rem;
 }
-/* line 304, sass/style.scss */
+/* line 309, sass/style.scss */
 footer button a {
   color: white;
 }
-/* line 306, sass/style.scss */
+/* line 311, sass/style.scss */
 footer button a:hover {
   color: #ff6b6b;
 }
