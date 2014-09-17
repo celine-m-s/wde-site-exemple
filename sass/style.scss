@@ -1,3 +1,14 @@
+/*
+Theme Name: Mon thème
+Author: Céline MS
+Author URI: http://www.c-m-s.co
+Description: This is my, being humble, awesome theme.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: light, genius, talented
+*/
+
 @import 'setup';
 
 
@@ -128,13 +139,9 @@ nav a {
 }
 /* END STAR SEPARATOR */
 
-// .left {
-//   float: left;
-// }
+.container {
 
-// .right {
-//   float: right;
-// }
+}
 
 .rounded {
   border-radius: 50%;
@@ -168,6 +175,7 @@ nav a {
     /*width: 960px;*/
     // margin: auto;
     background-color: white;
+    padding-bottom: 3rem;
     // padding: 20px 50px;
   }
 
@@ -313,5 +321,30 @@ footer {
       }
     }
   }
+
 }
 
+  .widget_wysija {
+    text-align: center;
+    .wysija-paragraph {
+      text-align: center;
+      label {
+        display: inline-block;
+      }
+    }
+  }
+
+  .wysija-submit[type=submit] {
+    margin: auto;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 1px $blue solid;
+    color: $blue;
+    background-color: white;
+    outline: none;
+    transition: all 0.5s ease;
+    &:hover {
+      background-color: $blue;
+      color: white;
+    }
+  }

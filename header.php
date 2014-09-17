@@ -33,7 +33,7 @@
     <img src="<?php bloginfo('template_directory'); ?>/images/lhooq.jpg" class="rounded" id="logo">
     <h2><?php bloginfo('description'); ?></h2>
 
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default visible-xs" role="navigation">
       <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -62,7 +62,7 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <nav id="main-nav">
+    <nav id="main-nav" class="hidden-xs">
       <?php
         wp_nav_menu('secondary-nav');
       ?>
