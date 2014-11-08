@@ -30,7 +30,7 @@
 <div class="container" id="wrapper">
   <header>
     <h1><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></h1>
-    <img src="<?php bloginfo('template_directory'); ?>/images/lhooq.jpg" class="rounded" id="logo">
+    <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/images/lhooq.jpg" class="rounded" id="logo"></a>
     <h2><?php bloginfo('description'); ?></h2>
 
     <nav class="navbar navbar-default visible-xs" role="navigation">
