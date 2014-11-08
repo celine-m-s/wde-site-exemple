@@ -1,6 +1,12 @@
+<?php
+/*
+Template Name: Full Width
+*/
+?>
+
 
 <?php get_header(); ?>
-  <div class="container-fluid">
+  <div class="container" style="background-color: black;">
     <div class="row">
       <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>

@@ -16,8 +16,8 @@
         <h4 class="modal-title" id="myModalLabel">Inscription à la newsletter</h4>
       </div>
       <div class="modal-body">
-        <?php $widgetNL = new WYSIJA_NL_Widget(true); ?>
-        <?php echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php')); ?>
+        <?php // $widgetNL = new WYSIJA_NL_Widget(true); ?>
+        <?php // echo $widgetNL->widget(array('form' => 1, 'form_type' => 'php')); ?>
       </div>
     </div>
   </div>
